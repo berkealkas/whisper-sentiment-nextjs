@@ -1,5 +1,9 @@
 function mobileTabletCheck() {
     // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
+    if (typeof window === 'undefined' || typeof navigator === 'undefined') {
+        // window or navigator is not defined, cannot perform browser-specific checks
+        return false;
+    }
     let check = false;
     (function (a: string) {
         if (
