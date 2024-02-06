@@ -4,6 +4,7 @@ import Whisper from "@components/Whisper";
 import Sentiment from "@components/Sentiment";
 import { useSelector } from "react-redux";
 import { selectTranscriptOutput } from "@redux/features/transcriptSlice";
+import TextToSpeech from "@components/TextToSpeech";
 
 function App() {
     const transcriptOutput = useSelector(selectTranscriptOutput)
@@ -19,9 +20,14 @@ function App() {
                 </h2>
                 <Whisper />
                 
-                {transcriptOutput !== null &&
+                {/* {transcriptOutput !== null &&
+                <>
                     <Sentiment transcribedData={transcriptOutput}/>
-                }
+                    <TextToSpeech transcribedData={transcriptOutput}/>
+                </> */}
+                
+                <Sentiment transcribedData={transcriptOutput}/>
+                    <TextToSpeech transcribedData={transcriptOutput}/>
             </div>
         </div>
     );

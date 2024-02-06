@@ -1,0 +1,46 @@
+{
+    "name": "Whisper Sentiment",
+    "description": "ML-powered speech recognition and sentiment analysis",
+    "short_name": "NextWS",
+    "theme_color": "#000000",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "screenshots": [
+      {
+        "src": "/wide-ss.png",
+        "sizes": "1918x911",
+        "type": "image/png",
+        "form_factor": "wide"
+      },
+      {
+        "src": "/narrow-ss.png",
+        "sizes": "378x821",
+        "type": "image/png",
+        "form_factor": "narrow"
+      }
+    ],
+    "icons": [
+      {
+        "src": "/icon.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+      },
+      {
+        "src": "/icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any"
+
+      },
+      {
+        "src": "/icon-144.png",
+        "sizes": "144x144",
+        "type": "image/png",
+        "purpose": "any"
+      }
+    ],
+    "prefer_related_applications": true
+  }

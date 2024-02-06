@@ -68,7 +68,6 @@ export default function Sentiment({ transcribedData }: Props) {
             <input
               className="w-full p-2 border border-gray-300 rounded mb-4 text-black"
               type="text"
-              placeholder="Enter text here"
               onInput={e => {
                 classify((e.target as HTMLInputElement).value);
               }}
